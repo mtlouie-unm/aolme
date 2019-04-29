@@ -31,6 +31,9 @@ bash scripts/extract_optical_flow.sh SRC_FOLDER OUT_FOLDER NUM_WORKER
 Training is done by executing two scripts: ```clean.sh``` and ```tsn_train.sh``` from the ```/app``` directory.
 ```
 bash clean.sh
-bash tsn_train.sh <OUT_FOLDER>
+bash tsn_train.sh <OUT_FOLDER> <num_gpus>
 ```
 ### 5. Testing
+```
+bash tsn_test.sh
+```
