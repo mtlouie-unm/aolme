@@ -26,3 +26,11 @@ bash scripts/extract_optical_flow.sh SRC_FOLDER OUT_FOLDER NUM_WORKER
 - `SRC_FOLDER` points to the folder where you put the video dataset
 - `OUT_FOLDER` points to the root folder where the extracted frames and optical images will be put in
 - `NUM_WORKER` specifies the number of GPU to use in parallel for flow extraction, must be larger than 1
+
+### 4. Training
+Training is done by executing two scripts: ```clean.sh``` and ```tsn_train.sh``` from the ```/app``` directory.
+```
+bash clean.sh
+bash tsn_train.sh
+```
+### 5. Testing
