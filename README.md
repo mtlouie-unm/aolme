@@ -20,7 +20,8 @@ Note: The base directory of the TSN project folder is located ```/app```, so to 
 
 ### 3. Before any Training/Testing can be done, motion vectors needed to computed.
 To compute the Motion Vectors for your video dataset you use the Denseflow executable that is included in the Singularity Image. This is done by running the follwing command from the ```/app``` directory.
-```bash scripts/extract_optical_flow.sh SRC_FOLDER OUT_FOLDER NUM_WORKER
+```
+bash scripts/extract_optical_flow.sh SRC_FOLDER OUT_FOLDER NUM_WORKER
 ```
 - `SRC_FOLDER` points to the folder where you put the video dataset
 - `OUT_FOLDER` points to the root folder where the extracted frames and optical images will be put in
