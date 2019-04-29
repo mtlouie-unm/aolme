@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -l walltime=48:00:00
+#PBS -l nodes=1:ppn=16
+#PBS -q dualGPU
+#PBS -N singularity_tsn
+
+module load singularity3-3.0.3-gcc-4.8.5-3r534b5
+
+# You need to change the IMG_PATH to reflect the location of where you
+# copied the singularity image
+IMG_PATH="containers/tsn_train_test.simg"
+
+singularity exec  -B ~/xena-scratch/alome_videos:/mnt  --writable --nv ${IMG_PATH} bash /app/tsn_execute.sh
+
