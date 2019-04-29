@@ -11,3 +11,8 @@ Note that this Singularity Image is ~12GB so copying may take a while.
 ```
 module load singularity3-3.0.3-gcc-4.8.5-3r534b5
 ```
+### 2. Execute the Singularity Image
+```
+singularity shell -B <path_to_raw_videos>:<destination_directory_within_singularity_image> --writable --nv <path_to_tsn_train_test.simg>
+```
+The destination directory within the Singularity Image could be ```/mnt```.
