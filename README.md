@@ -6,7 +6,7 @@ mkdir <destination_directory>
 rsync -aP /users/mlouie/xena-scratch/containers/tsn_train_test.simg <path_to_destination_directory>
 ```
 Note that this Singularity Image is ~12GB so copying may take a while.
-## How to run TSN Singularity image on UNM CARC (High Performance Computing)
+## How to run TSN Singularity Image on UNM CARC (High Performance Computing)
 ### 1. Load Singularity Module
 ```
 module load singularity3-3.0.3-gcc-4.8.5-3r534b5
@@ -37,3 +37,4 @@ bash tsn_train.sh <OUT_FOLDER> <num_gpus>
 ```
 bash tsn_test.sh
 ```
+## Using PBS Script to RUN TSN Singularity Image
