@@ -38,3 +38,6 @@ bash tsn_train.sh <OUT_FOLDER> <num_gpus>
 bash tsn_test.sh
 ```
 ## Using PBS Script to RUN TSN Singularity Image
+``` 
+qsub tsn_exec.pbs
+```
