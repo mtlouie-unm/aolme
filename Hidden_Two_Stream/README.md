@@ -30,7 +30,4 @@ bash fix.sh
 bash hts_train.sh
 ```
 ### 5. Testing
-Sometimes when the Training Phase concludes (evident in the training_logs the last lines should say: "optimization done."), the terminal may hang. You can simply do ```ctrl+c```. Then proceed to run the testing script.
-```
-bash tsn_test.sh
-```
+Haven't done this yet. Training is taking forever.
