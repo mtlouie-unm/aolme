@@ -18,7 +18,7 @@ singularity shell -B <path_to_raw_videos>:<destination_directory_within_singular
 The destination directory within the Singularity Image could be ```/mnt```.
 Note: The base directory of the HTS project folder is located ```/worksapce/Hidden-Two-Stream```, so to access this base directory run ```cd /workspace/Hidden-Two-Stream```.
 
-### 3. Before any Training/Testing can be done, motion vectors needed to computed.
+### 3. Before any Training/Testing can be done, motion vectors are needed to be computed.
 Follow the directions in the TSN README.md to generate the motion vectors.
 
 ### 4. Training
