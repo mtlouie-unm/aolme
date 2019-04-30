@@ -29,11 +29,13 @@ bash scripts/extract_optical_flow.sh SRC_FOLDER OUT_FOLDER NUM_WORKER
 
 ### 4. Training
 Training is done by executing two scripts: ```clean.sh``` and ```tsn_train.sh``` from the ```/app``` directory.
+It is important to specify the number of GPUs that will be utilized.
 ```
 bash clean.sh
 bash tsn_train.sh <OUT_FOLDER> <num_gpus>
 ```
 ### 5. Testing
+Sometimes when the Training Phase concludes (evident in the training_logs the last lines should say: "optimization done."), the terminal may hang. You can simply do ```ctrl+c```. Then proceed to run the testing script.
 ```
 bash tsn_test.sh
 ```
