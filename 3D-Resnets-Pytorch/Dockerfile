@@ -28,6 +28,7 @@ RUN conda install conda-build
 RUN conda install binstar
 RUN conda install pandas
 RUN conda install seaborn
+RUN conda install scikit-learn
 RUN conda install -c anaconda python=3.6
 RUN conda install --yes pytorch=0.3.1 torchvision cuda80 -c pytorch
 
