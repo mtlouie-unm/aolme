@@ -16,7 +16,8 @@ module load python/3.6.0
 export PATH="$PATH:~/bash_scripts/"
 ```
 ```
-# Save and exit the .bashrc file and either reconnect your ssh session of do the following to save the changes
+# Save and exit the .bashrc file and either reconnect your ssh session
+# Or run the following command to save your changes to the current shell
 source ~/.bashrc
 ```
 ### 3. Now you can run the bash scripts from anywhere
