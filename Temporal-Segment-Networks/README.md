@@ -45,6 +45,7 @@ bash tsn_train.sh <OUT_FOLDER> <num_gpus>
 ```
 ### 5. Testing
 Sometimes when the Training Phase concludes (evident in the training_logs the last lines should say: "optimization done."), the terminal may hang. You can simply do ```ctrl+c```. Then proceed to run the testing script.
+
 PLEASE NOTE: If you change the number of training interations from 4000 to some other value you need to change the ```<NUM_ITERATIONS>``` as a parameter to the testing script shown below.
 ```
 bash tsn_test.sh <OUT_FOLDER> <NUM_ITERATIONS>
