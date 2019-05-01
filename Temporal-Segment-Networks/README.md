@@ -38,7 +38,7 @@ The format of this file is as follows:
 Training is done by executing two scripts: ```clean.sh``` and ```tsn_train.sh``` from the ```/app``` directory.
 It is important to specify the number of GPUs that will be utilized.
 
-To change the number of iterations to train, you need to change the ```max_iter``` parameter located in the ```tsn_bn_inception_flow_solver.prototxt```. This solver.prototxt is located ```/app/models/ucf101/```.
+To change the number of iterations to train, you need to change the ```max_iter``` parameter located in the ```tsn_bn_inception_flow_solver.prototxt```. This solver.prototxt is located ```/app/models/ucf101/```. The default number of iterations is 4000.
 ```
 bash clean.sh
 bash tsn_train.sh <OUT_FOLDER> <num_gpus>
@@ -46,7 +46,7 @@ bash tsn_train.sh <OUT_FOLDER> <num_gpus>
 ### 5. Testing
 Sometimes when the Training Phase concludes (evident in the training_logs the last lines should say: "optimization done."), the terminal may hang. You can simply do ```ctrl+c```. Then proceed to run the testing script.
 ```
-bash tsn_test.sh
+bash tsn_test.sh <OUT_FOLDER> <NUM_ITERATIONS>
 ```
 ## Using PBS Script to RUN TSN Singularity Image
 ``` 
