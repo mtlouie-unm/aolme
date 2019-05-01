@@ -21,7 +21,7 @@ export PATH="$PATH:~/bash_scripts/"
 source ~/.bashrc
 ```
 ### 3. Now you can run the bash scripts from anywhere
-#### **build script**
+#### ***build script***
 Pull a docker image from DockerHub and convert it to a singularity image. Note that this could take a while to build.
 ```
 build <name of image>.simg <docker hub path>
@@ -29,7 +29,7 @@ build <name of image>.simg <docker hub path>
 # To download the the resnets image for example you would:
 build resnets.simg docker://akash1196/resnets:latest
 ```
-#### **shell script**
+#### ***shell script***
 Shell into a singularity image. This command will mount the current directory onto the /mnt folder in the image by default. This script should also allow you to read/write within the image.
 ```
 # If path to mound directory isn't specefied '.' will be used by default
@@ -41,7 +41,7 @@ shell ~/singularity_images/resnets.simg
 # To mount, say a directory of videos onto the image:
 shell ~/singularity_images/resnets.simg  ~/videos
 ```
-#### **pretty script**
+#### ***pretty script***
 Some of the results in the resnets method are written to JSON. This is a simple script to make the JSON files more legible.
 ```
 # The formatted JSON file will be saved to <name of file>.pretty
