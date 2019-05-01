@@ -42,7 +42,7 @@ RUN cp ffmpeg-4.1.3-amd64-static/ffprobe /usr/local/bin
 # Copy over resnets code from git repo to the image
 RUN git clone https://github.com/akashp1196/aolme_resnets.git
 RUN cp -r aolme_resnets/ /app/
-RUN cp -r aolme_resnets/extras/ /usr/local/bin/
+RUN cp aolme_resnets/extras/* /usr/local/bin/
 
 USER build
 WORKDIR /
