@@ -15,10 +15,17 @@ module load singularity3-3.0.3-gcc-4.8.5-3r534b5
 ```
 singularity shell -B <path_to_raw_videos>:<destination_directory_within_singularity_image> --writable --nv <path_to_tsn_train_test.simg>
 ```
-The destination directory within the Singularity Image could be ```/mnt```.
+The default destination directory within the Singularity Image is ```/mnt```.
 Note: The base directory of the TSN project folder is located ```/app```, so to access this base directory run ```cd /app```.
 
 ### 3. Before any Training/Testing can be done, motion vectors are needed to be computed.
+
+The folder structure of ```/mnt`` should have two subdirectories:
+1. ```out```
+2. ```src```
+The ```out`` directory is where the computed motion vectors will be written.
+The ``src``` directory holds all of the activity videos sorted into subdirectories with the name of the activity as the name of the directory.
+
 To compute the Motion Vectors for your video dataset you use the Denseflow executable that is included in the Singularity Image. This is done by running the follwing command from the ```/app``` directory.
 ```
 bash scripts/extract_optical_flow.sh SRC_FOLDER OUT_FOLDER NUM_WORKER
