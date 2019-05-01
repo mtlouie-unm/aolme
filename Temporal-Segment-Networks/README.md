@@ -27,7 +27,7 @@ bash scripts/extract_optical_flow.sh SRC_FOLDER OUT_FOLDER NUM_WORKER
 - `OUT_FOLDER` points to the root folder where the extracted frames and optical images will be put in
 - `NUM_WORKER` specifies the number of GPU to use in parallel for flow extraction, must be larger than 1
 
-It is also necessary to modify the classInd.txt located at /app/data/ucf101_splits/ to reflect your classes of your dataset.
+It is also necessary to modify the classInd.txt located at ```/app/data/ucf101_splits/``` to reflect your classes of your dataset.
 The format of this file is as follows:
 ```
 1 Writing
