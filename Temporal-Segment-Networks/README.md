@@ -1,5 +1,5 @@
 # TSN (Temporal Semgment Networks)
-The original TSN GitHub can be found [here].(https://github.com/yjxiong/temporal-segment-networks)
+The original TSN GitHub can be found [here](https://github.com/yjxiong/temporal-segment-networks).
 ## Obtaining TSN Singularity Image
 The TSN Singulairty Image can be copied from the Xena-scratch directory. This can be done by doing:
 ```
