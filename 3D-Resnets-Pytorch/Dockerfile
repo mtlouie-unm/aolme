@@ -31,15 +31,18 @@ RUN conda install seaborn
 RUN conda install -c anaconda python=3.6
 RUN conda install --yes pytorch=0.3.1 torchvision cuda80 -c pytorch
 
+USER root
 # Frame extracting support code
 RUN wget http://johnvansickle.com/ffmpeg/releases/ffmpeg-4.1.3-amd64-static.tar.xz
 RUN tar xvf ffmpeg-4.1.3-amd64-static.tar.xz
-COPY ffmpeg-4.1.3-amd64-static/ffmpeg /usr/local/bin
-COPY ffmpeg-4.1.3-amd64-static/ffprobe /usr/local/bin
+RUN cp ffmpeg-4.1.3-amd64-static/ffmpeg /usr/local/bin
+RUN cp ffmpeg-4.1.3-amd64-static/ffprobe /usr/local/bin
 
 
 # Copy over resnets code from git repo to the image
-WORKDIR /
 RUN git clone https://github.com/akashp1196/aolme_resnets.git
-COPY aolme_resnets/ app/
-COPY aolme_resnets/extras/ usr/local/bin/
+RUN cp -r aolme_resnets/ /app/
+RUN cp -r aolme_resnets/extras/ /usr/local/bin/
+
+USER build
+WORKDIR /
