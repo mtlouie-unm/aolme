@@ -43,6 +43,7 @@ To change the number of iterations to train, you need to change the ```max_iter`
 bash clean.sh
 bash tsn_train.sh <OUT_FOLDER> <num_gpus>
 ```
+If you receive an error regarding out of memory you may need to change the ```batch_size``` parameter specified in the ```tsn_bn_inception_flow_train_val.prototxt``` located at ```/app/models/ucf101/```. The default batch size is ```40```.
 ### 5. Testing
 Sometimes when the Training Phase concludes (evident in the training_logs the last lines should say: "optimization done."), the terminal may hang. You can simply do ```ctrl+c```. Then proceed to run the testing script.
 
