@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -l walltime=48:00:00
+#PBS -l nodes=1:ppn=16
+#PBS -q dualGPU
+#PBS -N resnets
+
+module load singularity3-3.0.3-gcc-4.8.5-3r534b5
+
+singularity exec -B ~/xena-scratch/resnets/aolme:/mnt --writable --nv ~/singularity_images/resnets.simg execute_resnets aolme_data
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## $1 should be the name of image *.simg, where * is the name :D
+## $2 should be the path to docker hub image (i.e. docker://akash1196/dog:latest
+singularity build --sandbox $1 $2

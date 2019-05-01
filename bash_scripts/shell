@@ -1,0 +1,3 @@
+#!/bin/bash
+
+singularity shell -B ${2:-.}:/mnt --writable --nv $1

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+module load matlab/R2018b
+
+matlab -nodisplay -nosplash -nodesktop -r "$1; exit"
