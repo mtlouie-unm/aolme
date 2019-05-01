@@ -20,7 +20,7 @@ Note: The base directory of the TSN project folder is located ```/app```, so to 
 
 ### 3. Before any Training/Testing can be done, motion vectors are needed to be computed.
 
-The folder structure of ```/mnt`` should have two subdirectories:
+The folder structure of ```/mnt``` should have two subdirectories:
 1. ```out```
 2. ```src```
 The ```out`` directory is where the computed motion vectors will be written.
