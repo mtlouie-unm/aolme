@@ -36,4 +36,5 @@ bash fix.sh
 bash hts_train.sh
 ```
 ### 5. Testing
-Haven't done this yet. Training is taking forever.
+To test run the python file: ```demo_hidden.py``` located at ```/workspace/Hidden-Two-Stream/models/ucf101_split1_unsup_end/evalucf101/```. Before running this python file you need to change the paths to the trained model. Within the python file change the following variable defintions:
+```model_file = '../logs_end/vgg16_end_iter_<number_of_iterations>.caffemodel'```
