@@ -8,7 +8,7 @@ rsync -aP /users/mlouie/xena-scratch/containers/tsn_train_test.simg <path_to_des
 ```
 Note that this Singularity Image is ~12GB so copying may take a while.
 
-### If for whatever reason you break the Singularity image you can build a new one with the the following command:
+#### If for whatever reason you break the Singularity image you can build a new one with the the following command:
 ```
 singularity build --sandbox <new_name_for_singularity_image> docker://mlouieunm/aolme:Temporal-Segment-Networks
 ```
