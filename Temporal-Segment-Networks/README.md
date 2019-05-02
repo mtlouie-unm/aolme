@@ -62,9 +62,11 @@ Sometimes when the Training Phase concludes (evident in the training_logs the la
 
 PLEASE NOTE: If you change the number of training interations from 4000 to some other value you need to change the ```<NUM_ITERATIONS>``` as a parameter to the testing script shown below.
 ```
-bash tsn_test.sh <OUT_FOLDER> <NUM_ITERATIONS>
+bash tsn_test_flow.sh <OUT_FOLDER> <NUM_ITERATIONS>
+bash tsn_test_rgb.sh <OUT_FOLDER> <NUM_ITERATIONS>
 ```
 ## Using PBS Script to RUN TSN Singularity Image
 ``` 
-qsub tsn_exec.pbs
+qsub tsn_exec_flow.pbs
+qsub tsn_exec_rgb.pbs
 ```
