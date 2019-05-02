@@ -9,7 +9,7 @@ Note that this Singularity Image is ~12GB so copying may take a while.
 
 #### If for whatever reason you break the Singularity image you can rebuild a new one with:
 ```
-singularity build <new_singularity_image_name> docker://mlouieunm/aolme:Hidden-Two-Stream
+singularity build --sandbox <new_singularity_image_name> docker://mlouieunm/aolme:Hidden-Two-Stream
 ```
 
 ## How to run HTS Singularity Image on UNM CARC (High Performance Computing)
