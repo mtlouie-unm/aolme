@@ -1,14 +1,7 @@
 # TSN (Temporal Semgment Networks)
 The original TSN GitHub can be found [here](https://github.com/yjxiong/temporal-segment-networks).
 ## Obtaining TSN Singularity Image
-The TSN Singulairty Image can be copied from the Xena-scratch directory. This can be done by doing:
-```
-mkdir <destination_directory>
-rsync -aP /users/mlouie/xena-scratch/containers/tsn_train_test.simg <path_to_destination_directory>
-```
-Note that this Singularity Image is ~12GB so copying may take a while.
-
-#### If for whatever reason you break the Singularity image you can build a new one with the the following command:
+The TSN Singulairty Image can be built from DockerHub. This can be done by doing:
 ```
 singularity build --sandbox <new_name_for_singularity_image> docker://mlouieunm/aolme:Temporal-Segment-Networks
 ```
