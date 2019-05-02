@@ -1,13 +1,6 @@
 HTS (Hidden Two Stream)
 ## Obtaining HTS Singularity Image
-The HTS Singulairty Image can be copied from the Xena-scratch directory. This can be done by doing:
-```
-mkdir <destination_directory>
-rsync -aP /users/mlouie/xena-scratch/containers/hts_train_test.simg <path_to_destination_directory>
-```
-Note that this Singularity Image is ~12GB so copying may take a while.
-
-#### If for whatever reason you break the Singularity image you can rebuild a new one with:
+The HTS Singulairty Image can be built from DockerHub. This can be done by doing:
 ```
 singularity build --sandbox <new_singularity_image_name> docker://mlouieunm/aolme:Hidden-Two-Stream
 ```
@@ -19,7 +12,7 @@ module load singularity3-3.0.3-gcc-4.8.5-3r534b5
 ```
 ### 2. Execute the Singularity Image
 ```
-singularity shell -B <path_to_raw_videos>:<destination_directory_within_singularity_image> --writable --nv <path_to_hts_train_test.simg>
+singularity shell -B <path_to_raw_videos>:<destination_directory_within_singularity_image> --writable --nv <path_to_hts.simg>
 ```
 The destination directory within the Singularity Image could be ```/mnt```.
 Note: The base directory of the HTS project folder is located ```/worksapce/Hidden-Two-Stream```, so to access this base directory run ```cd /workspace/Hidden-Two-Stream```.
