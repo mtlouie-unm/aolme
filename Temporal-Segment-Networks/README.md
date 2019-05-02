@@ -13,7 +13,7 @@ module load singularity3-3.0.3-gcc-4.8.5-3r534b5
 ```
 ### 2. Execute the Singularity Image
 ```
-singularity shell -B <path_to_raw_videos>:<destination_directory_within_singularity_image> --writable --nv <path_to_tsn_train_test.simg>
+singularity shell -B <path_to_raw_videos>:<destination_directory_within_singularity_image> --writable --nv <path_to_tsn.simg>
 ```
 The default destination directory within the Singularity Image is ```/mnt```.
 Note: The base directory of the TSN project folder is located ```/app```, so to access this base directory run ```cd /app```.
