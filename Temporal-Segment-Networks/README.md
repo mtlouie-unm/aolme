@@ -65,6 +65,13 @@ PLEASE NOTE: If you change the number of training interations from 4000 to some 
 bash tsn_test_flow.sh <OUT_FOLDER> <NUM_ITERATIONS>
 bash tsn_test_rgb.sh <OUT_FOLDER> <NUM_ITERATIONS>
 ```
+
+Once testing is done for both modalities and two score files are generated, you can get a modality fusion score by running:
+```
+python tools/eval_scores.py <test_scores/score_test_rgb.npz> <test_scores/score_test_flow.npz> --score_weights 1 1.5
+```
+The score weights option gives weighting of the RGB and Optical flow scores of 1:1.5, respectively.
+
 ## Using PBS Script to RUN TSN Singularity Image
 ``` 
 qsub tsn_exec_flow.pbs
