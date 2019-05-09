@@ -1,4 +1,5 @@
-HTS (Hidden Two Stream)
+# HTS (Hidden Two Stream)
+The Hidden Two Stream GitHub is found [here](https://github.com/bryanyzhu/Hidden-Two-Stream).
 ## Obtaining HTS Singularity Image
 The HTS Singulairty Image can be built from DockerHub. This can be done by doing:
 ```
