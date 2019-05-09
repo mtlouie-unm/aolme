@@ -38,4 +38,4 @@ Now run the ```hts_test.sh``` located at ```/workspace/Hidden-Two-Stream```
 bash hts_test.sh
 ```
 
-After you get both spatial and hidden predictions, the late fusion code is in folder ./test, run late_fusion.m to get the final two stream predictions. Although, this is MATLAB code and will NOT run within the Singularity Container. You will need to move th late_fusion.m file and the .mat files outside of the HTS directory and test outside. This inconvience is due to licensing of MATLAB inside of a container.
+After you get both spatial and hidden predictions, the late fusion code is in folder ```./test```, run ```late_fusion.m``` to get the final two stream predictions. Although, this is MATLAB code and will NOT run within the Singularity Container. You will need to move th ```late_fusion.m``` file and the ```.mat``` files outside of the HTS directory and test outside. This inconvience is due to licensing of MATLAB inside of a container.
